@@ -1,0 +1,51 @@
+.todos-bg-container{
+    background-color: #f9fbfe;
+    height: 100vh;
+    font-family: "Roboto";
+    padding: 20px;
+}
+.head{
+    text-align: center;
+    color:blue;
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.head2{
+    font-weight: 700;
+    font-size: 30px;
+    margin-right: 25px;
+}
+.head3{
+    font-weight: 500;
+    color: black;
+    font-size: 30px;
+    
+}
+.todo_input{
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #e4e7eb;
+    width: 90%;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 15px;
+    margin-left: none;
+}
+.add_btn{
+    background-color: blue;
+    color: #ffffff;
+    border-radius: 6px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-left: none;
+    border: none;
+}
+.todosContainer{
+    margin-top: 15px;
+}
