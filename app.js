@@ -7,20 +7,23 @@ const app = express();
 app.use(express.json());
 let db=null;
 const dbPath = path.join(__dirname,"my_database.db");
-const initializeDbAndServer = () => {
+const initializeDbAndServer = async() => {
     try{
-        db = open({
+        db = await open({
             filename: dbPath,
             driver: sqlite3.Database
         })
-        app.listen(3000, () => console.log("Server running at http://localhost:3000/"))
+        
     } catch(e) {
         console.log(`DB error: ${e.message}`)
         process.exit(1);
     }
+    app.listen(3000, () => console.log("Server running at http://localhost:3000/"));
     
 }
 initializeDbAndServer();
+
+console.log(db);
 
 /*db.run(`CREATE TABLE IF NOT EXISTS todos(
     id INTEGER PRIMARY KEY,
