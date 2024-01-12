@@ -5,9 +5,18 @@
 <body>
     <h1>Template Engine</h1>
     <ul>
-        <% for (let i = 0; i < arr.length; i++) { %>
-            <li><%= arr[i] %></li>
+        <% for (let i = 0; i < arr1.length; i++) { %>
+            <li><%= arr1[i] %></li>
         <% } %>
+    </ul>
+    <h1>Database connected</h1>
+    <ul>
+        <% for(let j=0; i<total.length; j++) { %>
+            <li><%= total[j].item %></li>
+        <% } %>
+        <!-- <% total.forEach(row =>  { %>
+            <li><%= row.item %></li>
+        <% }) %> -->
     </ul>
 </body>
 
